@@ -19,7 +19,7 @@ A simple currency converter web app that converts currencies in real time using 
 2. Open `index.html` in your browser
 
 ## 🔹 Live Demo
-https://sanjaykumar45-git.github.io/Currency-Convertor/
+https://sanjaykmar45-git.github.io/Currency-Convertor/
 
 ## 🔹 Screenshot
 ![Currency Converter](assets/screenshot.png)
