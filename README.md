@@ -22,4 +22,4 @@ A simple currency converter web app that converts currencies in real time using 
 https://sanjaykmar45-git.github.io/Currency-Convertor/
 
 ## 🔹 Screenshot
-![Currency Converter](assets/screenshot.png)
+![Currency Converter](assets/screenshot.jpeg)
