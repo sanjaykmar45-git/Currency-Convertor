@@ -4,7 +4,7 @@ const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
 const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
-const msg = document.querySelector(".msg p")
+const msg = document.querySelector(".msg");
 
 for(let select of dropdowns){
     for(let currCode in countryList){
@@ -38,6 +38,9 @@ const updateExchangeRate = async () => {
         let rate = data[fromCurr.value.toLowerCase()][toCurr.value.toLowerCase()];
         let finalAmount = (rate * amtVal).toFixed(3);
         msg.innerText = `${amtVal}${fromCurr.value} = ${finalAmount}${toCurr.value}`;
+        msg.classList.remove("animate");
+        void msg.offsetWidth;
+        msg.classList.add("animate");
     }catch(error){
         msg.innerText = "Something went wrong. Try Again.";
         console.error(error);
@@ -62,3 +65,4 @@ btn.addEventListener("click" , (evt) => {
 window.addEventListener("load", () => {
     updateExchangeRate();
 })
+
